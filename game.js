@@ -95,7 +95,6 @@ function nextSequence() {
   level++;
   
   // Update UI
-  document.getElementById("level-title").innerText = "Level " + level;
   document.getElementById("current-level").innerText = level;
 
   // Check High Score
