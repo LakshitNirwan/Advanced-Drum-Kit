@@ -1,0 +1,147 @@
+/* --- ORIGINAL DRUM KIT STYLES --- */
+
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+  margin-bottom: 0.5rem; /* Slightly reduced to fit scoreboard */
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+/* Drum Images */
+.w {
+  background-image: url("images/tom1.png");
+}
+.a {
+  background-image: url("images/tom2.png");
+}
+.s {
+  background-image: url("images/tom3.png");
+}
+.d {
+  background-image: url("images/tom4.png");
+}
+.j {
+  background-image: url("images/snare.png");
+}
+.k {
+  background-image: url("images/crash.png");
+}
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 5% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white; /* Ensures pngs look right */
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+/* Original Game Over Flash */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* --- NEW FEATURES STYLING --- */
+
+/* 1. The Scoreboard (New) */
+.score-board {
+  color: #dbedf3;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* 2. The Start Button (New) */
+#start-btn {
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  background-color: #da0463;
+  color: white;
+  border: 4px solid #dbedf3;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Arvo", cursive;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #283149;
+}
+
+#start-btn:hover {
+  background-color: #ff0675;
+  border-color: #fff;
+}
+
+/* 3. The Glow Effects (Additive) */
+/* This keeps the button looking the same, but adds a colored glow around it when pressed */
+
+.pressed {
+  opacity: 1; /* Keep full opacity */
+  transform: scale(0.95); /* Slight shrink effect */
+}
+
+/* Specific colors for the shadow/glow only */
+.c-w.pressed {
+  box-shadow: 0 0 20px red;
+  border-color: red;
+  color: red;
+}
+.c-a.pressed {
+  box-shadow: 0 0 20px orange;
+  border-color: orange;
+  color: orange;
+}
+.c-s.pressed {
+  box-shadow: 0 0 20px yellow;
+  border-color: yellow;
+  color: yellow;
+}
+.c-d.pressed {
+  box-shadow: 0 0 20px green;
+  border-color: green;
+  color: green;
+}
+.c-j.pressed {
+  box-shadow: 0 0 20px cyan;
+  border-color: cyan;
+  color: cyan;
+}
+.c-k.pressed {
+  box-shadow: 0 0 20px blue;
+  border-color: blue;
+  color: blue;
+}
+.c-l.pressed {
+  box-shadow: 0 0 20px purple;
+  border-color: purple;
+  color: purple;
+}
